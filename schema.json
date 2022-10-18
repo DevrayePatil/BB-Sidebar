@@ -1,0 +1,47 @@
+{
+  "type": "component",
+  "metadata": {},
+  "schema": {
+    "name": "bb-sidebar",
+    "friendlyName": "bb-sidebar",
+    "description": "An amazing Budibase component!",
+    "icon": "Text",
+    "settings": [
+      {
+        "type": "text",
+        "key": "option1",
+        "label": "Option 1"
+      },
+      {
+        "type": "text",
+        "key": "option2",
+        "label": "Option 2"
+      },
+      {
+        "type": "text",
+        "key": "option3",
+        "label": "Option 3"
+      },
+      {
+        "type": "text",
+        "key": "option4",
+        "label": "Option 4"
+      },
+      {
+        "type": "text",
+        "key": "option5",
+        "label": "Option 5"
+      },
+      {
+        "type": "text",
+        "key": "option6",
+        "label": "Option 6"
+      },
+      {
+        "type": "text",
+        "key": "option7",
+        "label": "Option 7"
+      }
+    ]
+  }
+}
