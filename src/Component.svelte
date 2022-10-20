@@ -17,14 +17,13 @@
 
   <div class="side-bar">
   <li class="list-style">
-    <ul>{option1}</ul>
-    <ul>{option2}</ul>
-    <ul>{option3}</ul>
-    <ul>{option4}</ul>
-    <ul>{option5}</ul>
-    <ul>{option6}</ul>
-    <ul>{option7}</ul>
-    <h1>hi</h1>
+    <ul class="list-item">{option1}</ul>
+    <ul class="list-item">{option2}</ul>
+    <ul class="list-item">{option3}</ul>
+    <ul class="list-item">{option4}</ul>
+    <ul class="list-item">{option5}</ul>
+    <ul class="list-item">{option6}</ul>
+    <ul class="list-item">{option7}</ul>
   </li>
   </div>
 </div>
@@ -38,11 +37,16 @@
   .side-bar{
     width: max-content;
     height: 100%;
-    background-color: #fdd332;
+    background-color: white;
   }
 
   .list-style{
     list-style: none;
     padding: 10px;
+  }
+
+  .list-item{
+    padding: 5px;
+    margin: 3px;
   }
 </style>

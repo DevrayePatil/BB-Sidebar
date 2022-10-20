@@ -10,37 +10,51 @@
       {
         "type": "text",
         "key": "option1",
-        "label": "Option 1"
+        "label": "Option 1",
+        "defaultValue": "Option 1"
       },
       {
         "type": "text",
         "key": "option2",
-        "label": "Option 2"
+        "label": "Option 2",
+        "defaultValue": "Option 1"
+
       },
       {
         "type": "text",
         "key": "option3",
-        "label": "Option 3"
+        "label": "Option 3",
+        "defaultValue": "Option 3"
+
       },
       {
         "type": "text",
         "key": "option4",
-        "label": "Option 4"
+        "label": "Option 4",
+        "defaultValue": "Option 4"
+
+
       },
       {
         "type": "text",
         "key": "option5",
-        "label": "Option 5"
+        "label": "Option 5",
+        "defaultValue": "Option 5"
+
       },
       {
         "type": "text",
         "key": "option6",
-        "label": "Option 6"
+        "label": "Option 6",
+        "defaultValue": "Option 7"
+
       },
       {
         "type": "text",
         "key": "option7",
-        "label": "Option 7"
+        "label": "Option 7",
+        "defaultValue": "Option 7"
+
       }
     ]
   }
