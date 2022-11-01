@@ -5,7 +5,7 @@
     "name": "bb-sidebar",
     "friendlyName": "bb-sidebar",
     "description": "An amazing Budibase component!",
-    "icon": "Text",
+    "icon": "PaddingLeft  ",
     "settings": [
       {
         "type": "text",
@@ -18,43 +18,36 @@
         "key": "option2",
         "label": "Option 2",
         "defaultValue": "Option 1"
-
       },
       {
         "type": "text",
         "key": "option3",
         "label": "Option 3",
         "defaultValue": "Option 3"
-
       },
       {
         "type": "text",
         "key": "option4",
         "label": "Option 4",
         "defaultValue": "Option 4"
-
-
       },
       {
         "type": "text",
         "key": "option5",
         "label": "Option 5",
         "defaultValue": "Option 5"
-
       },
       {
-        "type": "text",
-        "key": "option6",
-        "label": "Option 6",
-        "defaultValue": "Option 6"
-
-      },
-      {
-        "type": "text",
-        "key": "option7",
-        "label": "Option 7",
-        "defaultValue": "Option 7"
-
+        "section": true,
+        "name": "Background",
+        "settings": [
+          {
+            "type": "color",
+            "key": "backgroundColor",
+            "label": "Background Color",
+            "defaultValue": "#fdd332"
+          }
+        ]
       }
     ]
   }
