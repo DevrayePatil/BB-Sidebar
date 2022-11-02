@@ -15,22 +15,30 @@
 
   export let backgroundColor;
   export let option1, option2, option3, option4, option5;
+  export let option1Link, option2Link, option4Link, option5Link;
+
+  export let subOption1Link1, subOption1Link2, subOption1Link3;
+  export let subOption2Link1, subOption2Link2;
+  export let subOption3Link1, subOption3Link2, subOption3Link3, subOption3Link4;
 
   const { styleable } = getContext("sdk");
   const component = getContext("component");
 
   const subListData = {
     Estimation: [
-      "Estimation Breakup",
-      "Estimation Summery",
-      "Estimation Revision",
+      ["Estimation Breakup", subOption1Link1],
+      ["Estimation Summery", subOption1Link2],
+      ["Estimation Revision", subOption1Link3],
     ],
-    Costing: ["Cost Variation", "Cost Breakup"],
+    Costing: [
+      ["Cost Variation", subOption2Link1],
+      ["Cost Breakup", subOption2Link2],
+    ],
     Resources: [
-      "Material",
-      "Labour",
-      "Machinery & Equipments",
-      "Material + Labour",
+      ["Material", subOption3Link1],
+      ["Labour", subOption3Link2],
+      ["Machinery & Equipments", subOption3Link3],
+      ["Material + Labour", subOption3Link4],
     ],
   };
 
@@ -47,55 +55,52 @@
         <li>
           <span class="list-icon">
             <Icon data={costSummeryIcon} />
-          </span>{option1}
+          </span><a href={option1Link} rel="noreferrer">{option1}</a>
         </li>
         <li>
           <span class="list-icon">
             <Icon data={projectLibraryIcon} />
-          </span>{option2}
+          </span><a href={option2Link} rel="noreferrer">{option2}</a>
         </li>
-        <li class="expand-list" >
+        <li class="expand-list">
           <!-- svelte-ignore a11y-click-events-have-key-events -->
           <div on:click={toggle} aria-expanded={isOpen}>
-          <span class="list-icon">
-            <Icon data={reportIcon} />
-          </span>{option3}
-          <i class="expand-list-icon">
-            <svg
-            style="tran"
-            width="15"
-            height="15"
-            fill="none"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            stroke-width="3"
-            viewBox="0 0 24 24"
-            stroke="currentColor"><path d="M9 5l7 7-7 7" /></svg
-          >
-          </i>
-        </div>
-          {#if isOpen}
-
-          <div class="expanded-list" transition:slide={{ duration: 300 }}>
-            <ul>
-              {#each Object.entries(subListData) as entry}
-                <AccordianList {entry} />
-              {/each}
-
-            </ul>
+            <span class="list-icon">
+              <Icon data={reportIcon} />
+            </span>{option3}
+            <i class="expand-list-icon">
+              <svg
+                style="tran"
+                width="15"
+                height="15"
+                fill="none"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="3"
+                viewBox="0 0 24 24"
+                stroke="currentColor"><path d="M9 5l7 7-7 7" /></svg
+              >
+            </i>
           </div>
+          {#if isOpen}
+            <div class="expanded-list" transition:slide={{ duration: 300 }}>
+              <ul>
+                {#each Object.entries(subListData) as entry}
+                  <AccordianList {entry} />
+                {/each}
+              </ul>
+            </div>
           {/if}
-
         </li>
         <li>
           <span class="list-icon">
             <Icon data={costSummeryIcon} />
-          </span>{option4}
+          </span><a href={option4Link} rel="noreferrer">{option4}</a>
         </li>
         <li>
           <span class="list-icon">
             <Icon data={projectUsers} />
-          </span>{option5}
+          </span><a href={option5Link} rel="noreferrer">{option5}</a>
         </li>
       </ul>
     </div>
@@ -110,10 +115,23 @@
   span {
     vertical-align: middle;
   }
+  a:link,
+  a:visited {
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+  }
+
+  a:hover,
+  a:active {
+    cursor: pointer;
+  }
   .side-bar {
     width: max-content;
     height: 100%;
     background-color: var(--bg-color, rgba(255, 255, 255, 0));
+    position: sticky;
   }
 
   .list-style {
@@ -124,6 +142,7 @@
   }
   .list-style ul li {
     padding: 5px 10px;
+    color: #000;
   }
   .list-style ul li:hover {
     background-color: rgba(0, 100, 255, 0.1);
@@ -137,8 +156,6 @@
     margin-top: 5px;
   }
 
-
-
   .expand-list:hover .list-icon {
     transform: rotate(-90deg);
     -webkit-transform: rotate(-90deg);
@@ -147,7 +164,10 @@
   .expand-list-icon {
     margin-top: 2px;
     float: right;
-    
+  }
+
+  svg {
+    transition: transform 0.2s ease-in;
   }
 
   [aria-expanded="true"] svg {

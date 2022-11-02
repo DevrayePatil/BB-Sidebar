@@ -25,7 +25,7 @@
 {#if isOpen}
   <ul transition:slide={{ duration: 300 }}>
     {#each entry[1] as item}
-      <li>{item}</li>
+      <li><a href={item[1]}>{item[0]}</a></li>
     {/each}
   </ul>
 {/if}
@@ -34,16 +34,25 @@
   * {
     padding: 0;
   }
+  a:link,
+  a:visited {
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+  }
 
+  a:hover,
+  a:active {
+    cursor: pointer;
+  }
  
 
   ul {
     list-style: none;
-    background-color: #fff;
   }
   ul li {
     padding: 2px;
-    background-color: bisque;
     width: fit-content;
   }
   svg {

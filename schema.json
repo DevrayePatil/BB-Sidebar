@@ -8,34 +8,136 @@
     "icon": "PaddingLeft  ",
     "settings": [
       {
-        "type": "text",
-        "key": "option1",
-        "label": "Option 1",
-        "defaultValue": "Option 1"
+        "section": true,
+        "name": "Options",
+        "settings": [
+          {
+            "type": "text",
+            "key": "option1",
+            "label": "Option 1",
+            "defaultValue": "Option 1"
+          },
+          {
+            "type": "text",
+            "key": "option1Link",
+            "label": "Option 1 Link",
+            "defaultValue": "https://mybuildcost.io/app/project-cost/61a8559b5be0be33d860461b/cost-summary"
+          },
+          {
+            "type": "text",
+            "key": "option2",
+            "label": "Option 2",
+            "defaultValue": "Option 1"
+          },
+          {
+            "type": "text",
+            "key": "option2Link",
+            "label": "Option 2 Link",
+            "defaultValue": "https://mybuildcost.io/app/projects?type=active"
+          },
+          {
+            "type": "text",
+            "key": "option3",
+            "label": "Option 3",
+            "defaultValue": "Option 3"
+          },
+          {
+            "type": "text",
+            "key": "option4",
+            "label": "Option 4",
+            "defaultValue": "Option 4"
+          },
+          {
+            "type": "text",
+            "key": "option4Link",
+            "label": "Option 4 Link",
+            "defaultValue": "https://mybuildcost.io/app/project-cost/61a8559b5be0be33d860461b/details?action=edit"
+          },
+          {
+            "type": "text",
+            "key": "option5",
+            "label": "Option 5",
+            "defaultValue": "Option 5"
+          },
+          {
+            "type": "text",
+            "key": "option5Link",
+            "label": "Option 5 Link",
+            "defaultValue": "https://mybuildcost.io/app/project-cost/61a8559b5be0be33d860461b/users"
+          }
+        ]
       },
       {
-        "type": "text",
-        "key": "option2",
-        "label": "Option 2",
-        "defaultValue": "Option 1"
+        "section": true,
+        "name": "Sub Options 1 Links",
+        "settings": [
+          {
+            "type": "text",
+            "key": "subOption1Link1",
+            "label": "Link 1",
+            "defaultValue": "https://mybuildcost.io/app/project-cost/61a8559b5be0be33d860461b/estimation-breakup"
+          },
+          {
+            "type": "text",
+            "key": "subOption1Link2",
+            "label": "Link 2",
+            "defaultValue": "https://mybuildcost.io/app/project-cost/61a8559b5be0be33d860461b/estimation-summary"
+          },
+          {
+            "type": "text",
+            "key": "subOption1Link3",
+            "label": "Link 3",
+            "defaultValue": "https://mybuildcost.io/app/project-cost/61a8559b5be0be33d860461b/estimation-revision"
+          }
+        ]
       },
       {
-        "type": "text",
-        "key": "option3",
-        "label": "Option 3",
-        "defaultValue": "Option 3"
+        "section": true,
+        "name": "Sub Options 2 Links",
+        "settings": [
+          {
+            "type": "text",
+            "key": "subOption2Link1",
+            "label": "Link 1",
+            "defaultValue": "https://mybuildcost.io/app/project-cost/61a8559b5be0be33d860461b/cost-variation"
+          },
+          {
+            "type": "text",
+            "key": "subOption2Link2",
+            "label": "Link 2",
+            "defaultValue": "https://mybuildcost.io/app/project-cost/61a8559b5be0be33d860461b/cost-breakup"
+          }
+        ]
       },
       {
-        "type": "text",
-        "key": "option4",
-        "label": "Option 4",
-        "defaultValue": "Option 4"
-      },
-      {
-        "type": "text",
-        "key": "option5",
-        "label": "Option 5",
-        "defaultValue": "Option 5"
+        "section": true,
+        "name": "Sub Options 3 Links",
+        "settings": [
+          {
+            "type": "text",
+            "key": "subOption3Link1",
+            "label": "Link 1",
+            "defaultValue": "https://mybuildcost.io/app/project-cost/61a8559b5be0be33d860461b/resource/materials"
+          },
+          {
+            "type": "text",
+            "key": "subOption3Link2",
+            "label": "Link 2",
+            "defaultValue": "https://mybuildcost.io/app/project-cost/61a8559b5be0be33d860461b/resource/labour"
+          },
+          {
+            "type": "text",
+            "key": "subOption3Link3",
+            "label": "Link 3",
+            "defaultValue": "https://mybuildcost.io/app/project-cost/61a8559b5be0be33d860461b/resource/machinery-equipment"
+          },
+          {
+            "type": "text",
+            "key": "subOption3Link4",
+            "label": "Link 4",
+            "defaultValue": "https://mybuildcost.io/app/project-cost/61a8559b5be0be33d860461b/resource/material-labour"
+          }
+        ]
       },
       {
         "section": true,
